@@ -1,13 +1,215 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Class Project Proposal</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Proposal — SyncSpace</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --fg: #1e293b;
+      --accent: #2563eb;
+      --card: #ffffff;
+      --radius: 12px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0f172a;
+      --fg: #e2e8f0;
+      --card: #1e293b;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: var(--card);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.4rem;
+      margin-top: 0;
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .date {
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .member {
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Class Project Proposal</h1>
-  <p class="tagline">Here is the outline for my class project.</p>
-</header>
+  <header>
+    <h1>SyncSpace</h1>
+    <p>A Smart Collaboration Platform for Teams</p>
+  </header>
+
+  <main>
+    <section id="team-members">
+      <h2>Team Members</h2>
+      <div class="team-list">
+        <div class="member">Ian King</div>
+      </div>
+    </section>
+
+    <section id="application-overview">
+      <h2>Application Overview</h2>
+      <p>
+        <strong>SyncSpace</strong> is a collaborative workspace web app designed
+        to help users manage tasks, share files, and communicate efficiently in
+        real time. From an end-user perspective, it provides an intuitive
+        dashboard for managing team projects, tracking progress, and staying in
+        sync—whether on desktop or mobile devices.
+      </p>
+    </section>
+
+    <section id="technology-overview">
+      <h2>Technology Overview</h2>
+      <ul>
+        <li><strong>Languages:</strong> HTML5, CSS3, JavaScript (ES6+)</li>
+        <li><strong>Libraries/Frameworks:</strong> Tailwind CSS, Chart.js</li>
+        <li><strong>Platform:</strong> Developed in Visual Studio Code</li>
+        <li><strong>Hosting:</strong> GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section id="proposal-date">
+      <h2>Proposal Last Updated</h2>
+      <p class="date" id="lastUpdated"></p>
+    </section>
+
+    <section id="feature-list">
+      <h2>Feature List (Prioritized)</h2>
+      <ul>
+        <li>User registration and authentication</li>
+        <li>Project and task management dashboard</li>
+        <li>File sharing between team members</li>
+        <li>Responsive mobile-friendly interface</li>
+        <li>Dark/light mode toggle</li>
+      </ul>
+    </section>
+
+    <section id="future-features">
+      <h2>Future Feature List (If More Time Allowed)</h2>
+      <ul>
+        <li>Real-time chat and video conferencing</li>
+        <li>Integration with cloud services (Google Drive, Dropbox)</li>
+        <li>Advanced analytics dashboard</li>
+        <li>AI task suggestion and prioritization</li>
+      </ul>
+    </section>
+
+    <section id="basic-technical-features">
+      <h2>Basic Technical Features</h2>
+      <ul>
+        <li>Use of semantic HTML structure</li>
+        <li>Responsive layout using CSS Grid and Flexbox</li>
+        <li>Client-side form validation using JavaScript</li>
+        <li>Use of Git and GitHub for version control</li>
+      </ul>
+    </section>
+
+    <section id="advanced-technical-features">
+      <h2>Advanced Technical Features</h2>
+      <ul>
+        <li>Dynamic theme switching with localStorage persistence</li>
+        <li>Interactive data visualization using Chart.js</li>
+        <li>Async JavaScript for dynamic content loading</li>
+        <li>Progressive enhancement for accessibility and offline use</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SyncSpace Project Proposal — Created for Educational Use</p>
+  </footer>
+
+  <script>
+    // Auto-update date for "Proposal Last Updated"
+    const dateField = document.getElementById("lastUpdated");
+    const today = new Date();
+    dateField.textContent = today.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+  </script>
+</body>
+</html>
+
